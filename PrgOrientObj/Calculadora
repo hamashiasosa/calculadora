@@ -9,35 +9,15 @@ namespace PrgOrientObj
             InitializeComponent();
         }
 
-        private void Calculadora_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Calculadora_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void Calcular_Click(object sender, EventArgs e)
         {
             double num1 = double.Parse(OP1.Text);
             double num2 = double.Parse(OP2.Text);
 
-            // Obtenemos la operaci髇 seleccionada del ComboBox
+            // Obtenemos la operaci贸n seleccionada del ComboBox
             string operacion = comboBox1.SelectedItem.ToString();
 
-            // Realizamos la operaci髇 correspondiente
+            // Realizamos la operaci贸n correspondiente
             double resultado = 0;
             switch (operacion)
             {
@@ -59,11 +39,6 @@ namespace PrgOrientObj
             txtResult.Text = resultado.ToString();
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void Operar_Click(object sender, EventArgs e)
         {
             string operacion = ComboBoxText.SelectedItem.ToString();
@@ -73,7 +48,7 @@ namespace PrgOrientObj
             string cadena2 = text2.Text;
             string cadena3 = text3.Text;
 
-            // Realizar la operaci髇 seleccionada en el ComboBox
+            // Realizar la operaci贸n seleccionada en el ComboBox
             switch (operacion)
             {
                 case "Concatenar":
@@ -101,7 +76,7 @@ namespace PrgOrientObj
                     resultado2.Text = resultadoComparar.ToString();
                     break;
                 default:
-                    resultado2.Text = "Seleccione una operaci髇 v醠ida";
+                    resultado2.Text = "Seleccione una operaci贸n v谩lida";
                     break;
             }
         }
